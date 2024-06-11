@@ -1,30 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Study Tracker</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
     <h1>Study Tracker</h1>
     <div class="time-slot">
-      <input type="checkbox" id="slot1" />
-      <label for="slot1">Time Slot 1 (e.g., 9:00 AM - 11:00 AM)</label>
+        <input type="checkbox" id="slot1">
+        <label for="slot1">7:00 AM - 10:00 AM</label>
+        <button onclick="updateSlot('slot1')">Check</button>
     </div>
     <div class="time-slot">
-      <input type="checkbox" id="slot2" />
-      <label for="slot2">Time Slot 2 (e.g., 11:00 AM - 1:00 PM)</label>
+        <input type="checkbox" id="slot2">
+        <label for="slot2">11:00 AM - 2:00 PM</label>
+        <button onclick="updateSlot('slot2')">Check</button>
     </div>
     <div class="time-slot">
-      <input type="checkbox" id="slot3" />
-      <label for="slot3">Time Slot 3 (e.g., 2:00 PM - 4:00 PM)</label>
+        <input type="checkbox" id="slot3">
+        <label for="slot3">4:30 PM - 7:30 PM</label>
+        <button onclick="updateSlot('slot3')">Check</button>
     </div>
     <div class="time-slot">
-      <input type="checkbox" id="slot4" />
-      <label for="slot4">Time Slot 4 (e.g., 4:00 PM - 6:00 PM)</label>
+        <input type="checkbox" id="slot4">
+        <label for="slot4">8:30 PM - 10:00 PM</label>
+        <button onclick="updateSlot('slot4')">Check</button>
     </div>
-    <button id="save">Save</button>
+    <button id="viewHistory">View Monthly History</button>
+    <div id="history"></div>
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
